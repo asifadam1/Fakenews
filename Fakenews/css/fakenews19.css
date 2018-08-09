@@ -1,0 +1,545 @@
+/*!
+ * 
+ */
+ 
+ .wrap #side-menu {
+  position: absolute;
+  z-index: -1;
+  background: #404040;
+  width: 22em;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 10px;
+  float: left;
+  display: block;
+  left: 0;
+  height: 900px;
+}
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background: #eff2ef;
+	}
+.title{
+	color:black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+.article{
+	color:black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+	
+
+.navbar-custom {
+    
+    background-color: black;
+	border-radius: 0;
+	border-bottom: 2px solid #0cd635;
+	
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size:20px;
+	text-transform: uppercase;
+	height: auto;
+	
+	
+	
+}
+
+ul li {
+	width: 150px;
+	padding: 20px 0px;
+}
+
+.navbar-custom .navbar-nav li a{
+	color: white;
+	
+}
+.navbar-brand {
+  padding: 0px;
+}
+/*Size nav bar brand*/
+.navbar-brand>img {
+  height: 150px;
+  width: 320px;
+  position: relative;
+  top: -40px;
+}
+
+.navbar-custom li a{
+	color: #000;
+	font-size:20px;
+	padding: 10px 40px;
+	word-wrap: normal;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/*This makes the links change color on hover*/
+.navbar-custom .navbar-nav li a:hover{
+	color: #0cd635;
+}
+
+/*This styled my search function bar*/
+
+.navbar-form .btn-custom{
+	color:white ;
+	background:#0cd635 ;
+	width: 60px;
+}
+.navbar-form .input-group{
+	top: 15px;
+	width: 300px;
+	
+}
+
+/*This does not work*/
+.navbar-custom .navbar-toggle{
+	color: red;
+}
+
+.navbar.navbar-default .navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+
+
+/*-----------------*/
+
+.content {
+	background: white;
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------*/
+.header{
+	   
+	background-color:black;
+	
+	
+	height: 100px;
+	color: #ffffff;
+	
+	border-bottom: 2px solid red;
+}
+
+
+.logo{
+	position:relative;
+	top: -200px;
+	left: 20px;
+
+	
+	
+}
+
+
+.hide-item{
+	display: none;
+}
+
+.list-group a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: #0cd635;
+	color: white;
+}
+ a.list-group-item:hover{
+	background: #373a37;
+	color: white;
+}
+
+.col-md-3{
+	background:white;
+	border: 2px solid #0cd635;
+}
+
+.lead{
+	color:black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+
+.col-md-9{
+	background:white;
+}
+
+
+
+
+
+/*--------------------------------------------------
+I have used display inherit to show navbar brand in this media screen sizeand have chosen to hide
+it in full screen as i will be using a page header in full screen*/
+
+/* Portrait and Landscape--Tablet-- */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	 
+.navbar-custom{
+	height: 80px;
+}
+
+ul li {
+	width: 20px;
+	padding: 20px 50px;
+	
+}
+
+.navbar-form .input-group{
+	
+	display: none;
+}
+
+
+
+}
+	
+
+@media only screen  and (min-device-width: 320px) and (max-width : 736px){
+
+
+
+ul li {
+	width: 30px;
+	
+}
+
+
+
+
+   .navbar-brand {
+  padding: 0px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  
+}
+.navbar-brand > img {
+	
+	height: 125px;
+	width: 175px;
+	}
+	
+
+
+.navbar-custom {
+height: auto;}
+
+.panel-footer{
+	position: absolute;
+	width: auto;
+	bottom: -370px;
+	
+}
+
+.btn-block{
+	position: absolute;
+	margin-left: 5%;
+	
+}
+
+.navbar-form .input-group{
+	
+	width: 250px;
+}
+
+ .Social-links li a img{
+	display: none;
+	
+}
+
+
+	
+}
+/*-------------------------------------------------*/	
+
+/*news columns**************************************************/
+
+.news {
+    background: black;
+	position: relative;
+	overflow: hidden;
+	z-index:1;
+ 	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+
+	border: 5px solid white;
+	
+}
+
+.news .img-figure {
+	position: relative;
+}
+
+.news .img-figure img {
+	position: relative;	
+	overflow: hidden;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.news:hover .img-figure img {
+	-webkit-transform: scale(1.10);
+	-moz-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	transform: scale(1.10);
+}
+
+.news .title {
+
+	padding: 29px 5px; /*This chenged the padding around the title*/
+	
+	position: absolute;
+	left: 0;
+	background:#373a37 ;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.news .title h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	
+}
+
+.news:hover .title  {
+	margin-top: -60px;
+	background:#0cd635;
+	color: white;
+	
+}
+
+.news  p.description {
+	position: relative;
+	font-weight: bold;
+	
+	text-transform: uppercase;
+	line-height: 22px;
+	opacity: 0;
+
+	text-align: center;
+
+	padding: 55px 10px 0px 10px;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
+
+.news:hover p.description  {
+	opacity: 1;
+	color: white;
+}
+
+p.more {
+	text-align: center;
+	
+}
+
+.more a {
+    position: relative;
+    font-size: 15px;
+    margin-top: 30px;
+   
+    
+   
+    color: white;
+}
+
+.more a:after {
+    content: '';
+    width: 18px;
+    height: 1px;
+
+    position: absolute;
+    left: 55px;
+    top: 9px;
+
+}
+
+.news:hover a:after {
+    width: 30px;
+}
+
+.cat {
+	background: red;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 1;
+	padding: 3px 15px;
+	opacity: 0.7;
+}
+
+.btn-block{
+	width:100px;
+	left: 80px;
+	background: #8e0e0e;
+	
+	
+	
+}
+/*-----------------------------------------------*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+	  height: 300px;
+  }
+  
+
+.box{
+	position: relative;
+	bottom: -20px;
+	
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.carousel-caption p{
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	color: white;
+	
+}
+/*--------------------------------------------------*/
+footer {
+	position: relative;
+	color: white;
+	font-size: 11px;
+	padding: 20px;
+	background: black;
+}
+
+.links li a{
+	color: white;
+	font-size: 16px;
+	list-style-type: none;
+	
+	
+}
+
+ .links li {
+	list-style-type: none;
+	position: relative;
+	right: 40px;
+}
+
+
+
+ .Social-links li a img{
+	width:140px;
+	position: absolute;
+	left: -10px;
+	
+}
+
+
+
+
+/*CONTACT PAGE ------------------------------------*/
+.modal-body{
+	position: absolute;
+	width: auto;
+	
+
+}
+.panel-footer{
+	position: absolute;
+	width: auto;
+	bottom: -370px;
+	left: 300px;
+}

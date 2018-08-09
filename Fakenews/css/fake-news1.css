@@ -1,0 +1,355 @@
+/*!
+ * 
+ */
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-color: black;
+	}
+
+
+.navbar-custom {
+    
+    background-color: #e2144e;
+	border-radius: 0;
+	border: 0;
+	
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size:20px;
+	text-transform: uppercase;
+	height: 80px;
+	
+	
+}
+
+ul li {
+	width: 150px;
+	padding: 20px 0px;
+}
+
+.navbar-custom .navbar-nav li a{
+	color: white;
+	background-color: #e2144e;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 150px;
+  width: 320px;
+  position: relative;
+  top: -40px;
+}
+.navbar-custom li a{
+	color: #000;
+	font-size:20px;
+	padding: 10px 40px;
+	word-wrap: normal;
+	display: inline-block;
+	margin-right: 20px;
+	
+	
+
+	
+}
+.header{
+	   
+	background-color:black;
+	
+	
+	height: 100px;
+	color: #ffffff;
+	
+	border-bottom: 2px solid red;
+}
+
+
+.logo{
+	position:relative;
+	top: -200px;
+	left: 20px;
+
+	
+	
+}
+
+.icons {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+	width: 200px;
+    
+}
+
+.hide-item{
+	display: none;
+}
+
+.list-group a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: #e2144e;
+	color: white;
+}
+ a.list-group-item:hover{
+	background: #910000;
+}
+/*--------------------------------------------------
+I have used display inherit to show navbar brand in this media screen sizeand have chosen to hide
+it in full screen as i will be using a page header in full screen*/
+@media only screen and (max-width : 640px){
+   .navbar-brand {
+  padding: 0px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+.navbar-brand>img {
+  height: 130px;
+  width: 250px;
+  position: relative;
+  top: -45px;
+right: 20px;
+	}
+	.hide-item{
+	display: inherit;
+}
+
+.navbar-custom {
+height: auto;}
+
+
+	
+}
+/*-------------------------------------------------*/	
+
+/*news columns**************************************************/
+
+.news {
+    background: #fff;
+	position: relative;
+	overflow: hidden;
+	z-index:1;
+ 	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+
+	border: 1px solid black;
+}
+
+.news .img-figure {
+	position: relative;
+}
+
+.news .img-figure img {
+	position: relative;	
+	overflow: hidden;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.news:hover .img-figure img {
+	-webkit-transform: scale(1.10);
+	-moz-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	transform: scale(1.10);
+}
+
+.news .title {
+
+	padding: 29px 5px; /*This chenged the padding around the title*/
+	
+	position: absolute;
+	left: 0;
+	background:#e2144e ;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.news .title h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 19px;
+	color: white;
+	text-align: center;
+	
+}
+
+.news:hover .title  {
+	margin-top: -60px;
+	background:#910000;
+	color: white;
+	
+}
+
+.news  p.description {
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 22px;
+	opacity: 0;
+
+	text-align: center;
+
+	padding: 55px 10px 0px 10px;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
+
+.news:hover p.description  {
+	opacity: 1;
+	color: white;
+}
+
+p.more {
+	text-align: center;
+	
+}
+
+.more a {
+    position: relative;
+    font-size: 15px;
+    margin-top: 30px;
+   
+    
+   
+    color: white;
+}
+
+.more a:after {
+    content: '';
+    width: 18px;
+    height: 1px;
+
+    position: absolute;
+    left: 55px;
+    top: 9px;
+
+}
+
+.news:hover a:after {
+    width: 30px;
+}
+
+.cat {
+	background: red;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 1;
+	padding: 3px 15px;
+	opacity: 0.7;
+}
+
+.btn-block{
+	width:100px;
+	left: 80px;
+	background: #8e0e0e;
+	
+	
+	
+}
+/*-----------------------------------------------*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+	  height: 300px;
+  }
+  
+
+.box{
+	position: relative;
+	bottom: -20px;
+	
+}
+
+
+.lead{
+	color:white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+/*--------------------------------------------------*/
+footer {
+	
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+.links li a{
+	color: white;
+	font-size: 16px;
+	list-style-type: none;
+	
+	
+}
+
+ .links li {
+	list-style-type: none;
+	position: relative;
+	right: 40px;
+}
+

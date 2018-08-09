@@ -5,7 +5,7 @@ This website was made using php.
 --------------------------------------------------------------------------------------------------------------------------
 The website works with a database which was created using phpMyAdmin, allows user to be able to search for news categories.
 image links are also stored within the database making it easy to manage image content.
---------------------------------------------------------------------------------------------------------------------------
+
 To make this website work follow the steps below:-
 1.	first copy the Fakenews folder  into xampp htdocs folder 
 2.	next go into phpmyadmin and click on import and where it says browse go to my folder which is Fakenews and click on news.sql and import this database into phpmyadmin.  This should create a news database with table articles. 
